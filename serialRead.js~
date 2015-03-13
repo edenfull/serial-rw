@@ -1,0 +1,7 @@
+var SerialPort = require("serialport").SerialPort;
+
+var sp = new SerialPort("/dev/tty.usbserial", {
+		baudrate: 921600,
+		parser: sp.parsers.raw
+});
+
